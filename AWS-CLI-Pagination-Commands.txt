@@ -1,0 +1,6 @@
+#AWS CLI Pagination commands
+#Remember to replace <YOUR_BUCKET_NAME> with the name of your S3 bucket
+
+aws s3api list-objects --bucket <YOUR_BUCKET_NAME>
+aws s3api list-objects --bucket <YOUR_BUCKET_NAME> --page-size 5
+aws s3api list-objects --bucket <YOUR_BUCKET_NAME> --max-items 1

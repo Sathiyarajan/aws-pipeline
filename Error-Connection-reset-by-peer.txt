@@ -1,0 +1,23 @@
+A note to the team.
+It appears that in editing the Lab video an important piece of information has gone missing.
+As a result when you try to mount the NFS volume provided by EFS you get an error:
+
+   mount.nfs4: Connection reset by peer
+   Failed to initialize TLS tunnel for fs-xxxxxxxx
+
+A ticket has been created to have this remedied.  However in the mean time please use the following as a guide to correcting the SG configuration.
+
+You need to ensure that one of the the SGs attached to the EC2 instances AND to the EFS service allows NFS (2049) for the EFS service and from the instances.
+You can add this to the Default SG.
+
+Or
+
+For the more security conscious students consider making a new SG "EFSmembers" with NFS from Source "sg-EFSmembers" .  Then add this SG to the EFS service and the instances.
+
+further reading:
+- https://docs.aws.amazon.com/efs/latest/ug/security-considerations.html
+- https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-mounting.htm
+
+Rusty
+Moderator & Coach
+
