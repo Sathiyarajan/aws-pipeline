@@ -1,0 +1,2 @@
+#Command to query Dynamodb from EC2 command line - just remember replace the region with the correct one for your database
+aws dynamodb get-item --table-name ProductCatalog --region eu-west-2  --key '{"Id":{"N":"205"}}'

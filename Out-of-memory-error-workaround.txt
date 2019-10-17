@@ -1,0 +1,5 @@
+# If you are experiencing memory issues with your t2.micro when trying to install the AWS SDK, please run the following commands and try again:
+
+/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+/sbin/mkswap /var/swap.1
+/sbin/swapon /var/swap.1
