@@ -1,3 +1,10 @@
+
+![image](https://user-images.githubusercontent.com/16596464/112654951-ef2db500-8e75-11eb-999c-23371f9e82b5.png)
+
+![image](https://user-images.githubusercontent.com/16596464/112655226-3156f680-8e76-11eb-958e-6d08b9bdb181.png)
+![image](https://user-images.githubusercontent.com/16596464/112655583-8e52ac80-8e76-11eb-8832-dfc58d62d044.png)
+
+
 # AWS Regions
 
 | Region Code        | Region Name       | Availability Zones
